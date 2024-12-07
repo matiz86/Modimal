@@ -1,0 +1,45 @@
+.account {
+  &--first {
+    margin-left: auto;
+    margin-right: 24px;
+
+    @include tablet {
+      margin-right: 12px;
+    }
+    @include mobile {
+      order: -1;
+      margin-left: unset;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include tablet {
+      gap: 12px;
+    }
+
+    &-link {
+      display: inline-block;
+
+      &--burger {
+        display: none;
+        @include mobile {
+          display: block;
+        }
+      }
+      &--search {
+        @include mobile {
+          display: none;
+        }
+      }
+
+      &:hover {
+        background-color: var(--neutral-grayededed);
+        transition: all 0.3s ease-in;
+      }
+    }
+  }
+}

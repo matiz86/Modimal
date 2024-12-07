@@ -1,0 +1,36 @@
+.color {
+  width: 24px;
+  aspect-ratio: 1;
+  background-color: gray;
+  border-radius: 50%;
+
+  @include tablet {
+    width: 16px;
+    aspect-ratio: 1;
+  }
+
+  &--black {
+    background-color: var(--black);
+  }
+
+  &--blue {
+    background-color: #7dc3eb;
+  }
+
+  &--green {
+    background-color: var(--primary);
+  }
+  &--yellow {
+    background-color: #909225;
+  }
+  &--dark-blue {
+    background-color: #19418e;
+  }
+  &--pink {
+    background-color: #d0a5ea;
+  }
+  &--white {
+    background-color: var(--white);
+    border: 1px solid #d0d0d0;
+  }
+}

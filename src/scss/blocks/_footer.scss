@@ -1,0 +1,21 @@
+.footer {
+  padding: 24px 0;
+  background-color: #000;
+  margin-top: 80px;
+
+  @include mobile {
+    margin-top: 24px;
+    padding: 8px 0;
+  }
+
+  &__copyright {
+    &-desc {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.8;
+      text-transform: capitalize;
+      color: var(--neutral-graycbcbcb);
+      padding-left: 32px;
+    }
+  }
+}

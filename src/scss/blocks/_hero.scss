@@ -1,0 +1,62 @@
+.hero {
+  height: 600px;
+  padding-bottom: 103px;
+
+  background-color: #999;
+  background-image: url("./../../img/hero/hero.jpg");
+  background-position: left center;
+  /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    height: 551px;
+    padding-bottom: 16px;
+    background-position: 29% center;
+  }
+
+  @include mediaBg() {
+    background-image: url("./../../img/hero/hero@2x.jpg");
+
+    // @include mobile-xs {
+    //   background-image: url("./../../img/hero/hero-mobile@2x.jpg");
+    //   background-position: center;
+    // }
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__content {
+    max-width: 494px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 27px;
+
+    @include tablet {
+      max-width: 300px;
+    }
+
+    @include mobile {
+      max-width: 167px;
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.8;
+    text-transform: capitalize;
+    color: var(--black);
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}

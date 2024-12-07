@@ -1,0 +1,37 @@
+.icons-wrapper {
+  padding: 30px 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.icon {
+  fill: transparent;
+  stroke: transparent;
+  width: 24px;
+  height: 24px;
+}
+
+.icon--search {
+  fill: var(--black);
+}
+
+.icon--person {
+  fill: var(--neutral-gray202020);
+}
+
+.icon--favorite {
+  fill: var(--white);
+  stroke-width: 2px;
+  stroke: var(--neutral-gray202020);
+}
+
+.icon--bag {
+  fill: var(--neutral-gray202020);
+}
+
+.icon--burger {
+  fill: var(--black);
+}
+.icon--arrow-down {
+  fill: var(--black);
+}
